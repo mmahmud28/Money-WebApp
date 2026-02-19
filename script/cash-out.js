@@ -4,17 +4,15 @@ document.getElementById("cash-out-btn")
     const amount = getValueFromInput('input-amount');
     const pinNumber = getValueFromInput("input-pin");
 
-    const currentBalance = getInnerValue("balance");
-
-     const myBalance = document.getElementById("balance");
+    const currentBalance = getBalance();
 
     const blance = Number(currentBalance) - Number (amount);
 
-    if(blance<0){
+    if(blance<0){3
         return;
     }
 
-    myBalance.innerText = blance;
+    setBalance(blance);
 
     
 });
