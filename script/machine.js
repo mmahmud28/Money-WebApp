@@ -26,9 +26,12 @@ function hideShow(id){
     
     const addMoney = document.getElementById("add-money");
     const cashOut = document.getElementById("cashout");
+    const transferMoney = document.getElementById("transfer-money");
+
 
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");
+    transferMoney.classList.add("hidden");
 
     const selected = document.getElementById(id);
 
